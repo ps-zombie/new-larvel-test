@@ -1,8 +1,10 @@
 /node_modules
 /public/hot
 /public/storage
+/public/gii_assets
 /storage/*.key
 /vendor
+/config/fe-render.php
 .env
 .env.backup
 .phpunit.result.cache
