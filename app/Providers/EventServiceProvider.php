@@ -18,6 +18,11 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'App\Events\AsyncNotifyEvent' => [
+            'App\Listeners\AsyncEmailNotifyEventListener',// 发送邮件通知
+            'App\Listeners\AsyncMassageNotifyEventListener',// 发送短信通知
+            'App\Listeners\TestEventListener',//
+        ],
     ];
 
     /**
